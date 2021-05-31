@@ -159,6 +159,7 @@ header .link-items ul .dropdown .dropdown-item::before {
 }
 
 #main .content .breadcrumb {
+  padding: 8px;
   background: #e9ebec;
   border-radius: 0px;
   height: 40px;
@@ -381,7 +382,7 @@ header .link-items ul .dropdown .dropdown-item::before {
 
 #main .content .charts-section .box {
   width: 100%;
-  height: 450px;
+  height: auto;
   background: white;
   margin-top: 35px;
 }
@@ -432,6 +433,7 @@ footer p {
 
 .sidebar #menu > ul > li {
   padding: 0 10px;
+  border-bottom: 1px solid #111;
 }
 
 .sidebar #menu > ul > li > a {
@@ -443,6 +445,7 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   height: 42px;
+  text-decoration: none;
 }
 
 .sidebar #menu > ul > li > a .icon {
@@ -460,7 +463,7 @@ footer p {
 }
 
 .sidebar #menu > ul > li:hover {
-  background: #428BCA;
+  background: #428bca;
   cursor: pointer;
 }
 
@@ -485,8 +488,7 @@ footer p {
 }
 
 .sidebar #menu > ul .parent ul {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0;
   list-style: none;
   display: none;
 }
@@ -538,7 +540,7 @@ footer p {
 }
 
 .sidebar #menu > ul .parent.active {
-  background-color: var(--text-color);
+  background: black;
   border-radius: 5px;
 }
 
@@ -546,25 +548,44 @@ footer p {
   color: #fff;
 }
 
-.sidebar #menu > ul .parent.active > a svg {
-  stroke: #fff;
+.sidebar #menu > ul .parent.active > a i {
+  color: #fff;
 }
 
 .sidebar #menu > ul .parent.active > a strong {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .sidebar #menu > ul .parent.active .child {
-  background-color: #fff;
+  background: black;
+}
+
+.sidebar #menu > ul .parent.active .child li {
+  background: #111;
 }
 
 .sidebar #menu > ul .parent.active .child li span {
-  color: var(--text-color);
+  color: white;
 }
 
-.sidebar #menu > ul .parent .child li .icon svg {
-  width: 14px !important;
-  margin: 0 18px 0 5px !important;
+.sidebar #menu > ul .parent .child li {
+  border-bottom: 1px solid #212121;
+  margin-left: 20px;
+  font-size: 12px;
+  border-left: 2px solid #428bca;
+  list-style: disc;
+  color: #428bca;
+  padding-left: 0px;
+}
+
+.sidebar #menu > ul .parent .child li .icon i {
+  color: white;
+  font-size: 12px !important;
+  margin: 0 10px 0 9px !important;
+}
+
+.sidebar #menu > ul .parent .child li span {
+  font-size: 11px;
 }
 /*# sourceMappingURL=style.css.map */
