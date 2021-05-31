@@ -1,11 +1,10 @@
 // toolTips
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
+// $(document).ready(function(){
+//   $('[data-toggle="tooltip"]').tooltip();
+// });
 
 
 $(".sidebar").load("../sidebar.html", function () {
-    feather.replace();
   
     $(".sidebar #menu ul  .parent .child .child-parent .active")
       .parent()

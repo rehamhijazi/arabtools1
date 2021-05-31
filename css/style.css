@@ -431,13 +431,6 @@ footer p {
 }
 
 .sidebar #menu > ul > li {
-  height: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 10px;
 }
 
@@ -449,6 +442,7 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 42px;
 }
 
 .sidebar #menu > ul > li > a .icon {
@@ -481,7 +475,7 @@ footer p {
 }
 
 .sidebar #menu > ul .parent > a strong {
-  margin-left: 125px;
+  margin-left: auto;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -526,6 +520,10 @@ footer p {
 .sidebar #menu > ul .parent ul a strong.icon-2 {
   margin-right: auto;
   margin-left: 0;
+}
+
+.sidebar #menu > ul .parent ul a span {
+  margin-left: 5px;
 }
 
 .sidebar #menu > ul .parent ul a.active {
