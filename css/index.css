@@ -1,0 +1,25 @@
+header .logo-sec .navbar-brand .logo {
+  font-weight: bold;
+  word-spacing: -1px;
+  color: white;
+}
+
+header .link-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .link-items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+/*# sourceMappingURL=index.css.map */
